@@ -1,0 +1,50 @@
+{
+  "name": "vybory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-server": "npx --no-install tsc && cp -r ./server/src/templates ./server/dist",
+    "start-server": "node ./server/dist/",
+    "build-client": "cd ./client && npx --no-install webpack && cp ./client/dist public",
+    "build-assets": "npx --no-install gulp",
+    "build": "yarn run build-styles && yarn run build-client && yarn run build-server",
+    "start": "yarn run build && yarn run start-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usachev-dev/vybory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/usachev-dev/vybory/issues"
+  },
+  "homepage": "https://github.com/usachev-dev/vybory#readme",
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "@types/lodash": "^4.14.159",
+    "@types/pug": "^2.0.4",
+    "@types/sockjs": "^0.3.32",
+    "@types/webpack": "^4.41.21",
+    "autoprefixer": "^9.8.6",
+    "cssnano": "^4.1.10",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "lodash": "^4.17.19",
+    "normalize.css": "^8.0.1",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1",
+    "precss": "^4.0.0",
+    "pug": "^3.0.0",
+    "sockjs": "^0.3.21",
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
