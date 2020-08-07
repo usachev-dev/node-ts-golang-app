@@ -1,4 +1,5 @@
 node_modules
 ./server/src/**/*.js
-dist/**/*
-public
+server/dist
+public/**/*
+.idea
