@@ -10,6 +10,7 @@
     "build-client": "cd ./client && npx --no-install webpack",
     "build-assets": "npx --no-install gulp",
     "build": "yarn run build-assets && yarn run build-client && yarn run build-server",
+    "prettier": "npx --no-install prettier \"./**/*.{ts,tsx,scss}\" --write",
     "start": "yarn run start-server"
   },
   "repository": {
@@ -27,23 +28,25 @@
     "@types/lodash": "^4.14.159",
     "@types/pug": "^2.0.4",
     "@types/sockjs": "^0.3.32",
+    "express": "^4.17.1",
+    "lodash": "^4.17.19",
+    "normalize.css": "^8.0.1",
+    "pug": "^3.0.0",
+    "sockjs": "^0.3.21",
+    "style.css": "^1.0.0",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
     "@types/webpack": "^4.41.21",
     "autoprefixer": "^9.8.6",
     "cssnano": "^4.1.10",
-    "express": "^4.17.1",
     "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.1.0",
-    "lodash": "^4.17.19",
-    "normalize.css": "^8.0.1",
     "postcss": "^7.0.32",
-    "postcss-cli": "^7.1.1",
     "postcss-import": "^12.0.1",
-    "precss": "^4.0.0",
-    "pug": "^3.0.0",
-    "sockjs": "^0.3.21",
+    "prettier": "^2.0.5",
     "ts-loader": "^8.0.2",
-    "typescript": "^3.9.7",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   }
