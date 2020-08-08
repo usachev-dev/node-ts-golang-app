@@ -10,8 +10,7 @@
     "build-client": "cd ./client && npx --no-install webpack",
     "build-assets": "npx --no-install gulp",
     "build": "yarn run build-assets && yarn run build-client && yarn run build-server",
-    "develop": "yarn run start-server",
-    "start": "yarn run build && yarn run start-server"
+    "start": "yarn run start-server"
   },
   "repository": {
     "type": "git",
