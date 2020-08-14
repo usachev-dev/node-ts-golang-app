@@ -1,10 +1,14 @@
 html
     head
-        title Выборы
+        title Node-ts-app
         block styles
-            link(type="stylesheet" href="/public/styles.css")
+            link(rel="stylesheet" href="/public/styles.css")
     body
         block header
+            nav.text-container
+                ul
+                    a(href="/") Home Page&nbsp;
+                    a(href="/hello") Hello page
         block main
         block scripts
             script(src='/public/index.bundle.js')

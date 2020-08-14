@@ -1,2 +1,1 @@
-const hello: string = "hello world client";
-console.log(hello);
+console.log("hello world client specific");

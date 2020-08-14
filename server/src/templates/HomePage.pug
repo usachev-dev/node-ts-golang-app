@@ -1,0 +1,14 @@
+extends Layout
+
+block main
+    .text-container
+        h1 Your starter node.js web app with
+        ul
+            li TypeScript
+            li Pug
+            li Sass, Postcss, Autoprefixer
+            li Minified js and css
+            li No js frameworks whatsoever (but you can add any)
+
+block append scripts
+    script(src='/public/home.bundle.js')
