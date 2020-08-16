@@ -1,0 +1,26 @@
+version: '3'
+services:
+  api:
+    build:
+      context: ./api
+      dockerfile: ./Dockerfile
+    expose:
+      - "8080"
+  server:
+    build:
+      context: .
+      dockerfile: ./Dockerfile-server
+    depends_on:
+      - api
+    expose:
+      - "88"
+  nginx:
+    depends_on:
+      - server
+      - api
+    build:
+      context: .
+      dockerfile: ./Dockerfile-nginx
+    ports:
+      - "80:80"
+

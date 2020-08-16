@@ -27,10 +27,13 @@
   "dependencies": {
     "@types/express": "4.17.7",
     "@types/pug": "2.0.4",
+    "@types/turbolinks": "^5.2.0",
+    "axios": "^0.19.2",
     "express": "4.17.1",
     "normalize.css": "8.0.1",
     "pug": "3.0.0",
     "style.css": "1.0.0",
+    "turbolinks": "^5.2.0",
     "typescript": "3.9.7"
   },
   "devDependencies": {

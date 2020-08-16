@@ -4,7 +4,8 @@ module.exports = {
     entry: {
         index: './src/index.ts',
         home: './src/home.ts',
-        hello: './src/hello.ts'
+        hello: './src/hello.ts',
+        turbolinks: './src/turbolinks.ts'
     },
     module: {
         rules: [

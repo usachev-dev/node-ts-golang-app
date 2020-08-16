@@ -6,6 +6,7 @@ const template = pug.compileFile(
 );
 
 export function HelloPage(hello: string): string {
+  console.log('HelloPage', hello);
   return render({ hello });
 }
 

@@ -1,6 +1,8 @@
-# Node ts starter app
+# Node ts + golang api starter app
 
-Welcome to a simple starter project using node.js! Here we have
+Welcome to a simple starter project using node.js and golang! Here we have
+* Golang api, accessible from node server and frontend
+* Compose through docker
 * TypeScript, shared logic between client and server
 * Sass, Postcss, Autoprefixer
 * Webpack configured for client bundles
